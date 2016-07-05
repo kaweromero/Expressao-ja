@@ -6,7 +6,9 @@ import javax.swing.JOptionPane;
 
 public class Exercicio2 {
 
-	Stack<String> stack = new Stack<>();
+	//Stack<String> stack = new Stack<>();
+	Fila fila1 = new Fila();
+	Fila fila2 = new Fila();
 
 	public static void main(String[] args) {
 		Exercicio2 ex = new Exercicio2();
@@ -27,12 +29,13 @@ public class Exercicio2 {
 		for (int i = 0; i < expressao.length(); i++) {
 			if (expressao.charAt(i) == '(') {
 				String abre = "(";
-				stack.addElement(abre);
+				inserir(fila1, abre);
+				//stack.addElement(abre);
 			}
 
 			if (expressao.charAt(i) == ')') {
 				try {
-					stack.pop();
+					fila2.removerFila();
 				} catch (Exception e) {
 
 					JOptionPane.showMessageDialog(null, "Falta Abrir parenteses na expressão!");
@@ -42,7 +45,7 @@ public class Exercicio2 {
 
 		}
 
-		if (stack.size() != 0) {
+		if (fila2.size() != 0) {
 
 			JOptionPane.showMessageDialog(null, "Falta fechar parenteses na expressão!");
 
@@ -52,21 +55,15 @@ public class Exercicio2 {
 
 	}
 
-	public void inserir(Fila1 fila1, String valor) {
+	public void inserir(Fila fila1, String valor) {
 
-		Fila1 fila2 = new Fila1();
+	//	for (int i = 0; i < 10; i++) {
 
-		// fila2 = fila1;
-
-		for (int i = 0; i < 10; i++) {
-
-			fila1.removerNoinicio();
-		}
+		//	fila1.removerNoinicio();
+		//}
 
 		fila2.inserirFila(valor);
 		fila2.imprimir();
-
-		// fila1=fila2;
 
 	}
 

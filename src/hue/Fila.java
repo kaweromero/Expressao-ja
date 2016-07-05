@@ -1,11 +1,11 @@
 package hue;
 
-public class Fila1 {
+public class Fila {
 
 	int quantidadeElemento;
 	No inicio, fim;
 
-	public Fila1() {
+	public Fila() {
 
 		quantidadeElemento = 0;
 		inicio = null;
@@ -39,7 +39,7 @@ public class Fila1 {
 		if (quantidadeElemento == 0) {
 			System.out.println("Lista vazia!");
 		} else {
-
+			System.out.println("TInha algo na fila");
 			No aux = inicio;
 			while (aux.getProximo() != null) {
 				aux = aux.getProximo();

@@ -3,9 +3,9 @@ package hue;
 
 public class DuasFilasUmaPilha {
 
-	public void inserir(Fila1 fila1, int valor) {
+	public void inserir(Fila fila1, int valor) {
 
-		Fila1 fila2 = new Fila1();
+		Fila fila2 = new Fila();
 
 		// fila2 = fila1;
 
@@ -25,7 +25,7 @@ public class DuasFilasUmaPilha {
 
 		DuasFilasUmaPilha fila = new DuasFilasUmaPilha();
 
-		Fila1 fila1 = new Fila1();
+		Fila fila1 = new Fila();
 
 		for (int i = 0; i < 10; i++) {
 			fila1.inserirFila(i);
