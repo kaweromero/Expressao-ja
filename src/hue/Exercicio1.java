@@ -35,7 +35,8 @@ public class Exercicio1 {
 					stack.pop();
 				}catch(Exception e){
 					
-					JOptionPane.showMessageDialog(null, "Falta Abrir parenteses na expressão!");
+					JOptionPane.showMessageDialog(null, "Falta Abrir parenteses na expressão!", "Erro", JOptionPane.ERROR_MESSAGE);
+					System.exit(0);
 				}
 				
 			}
@@ -43,11 +44,11 @@ public class Exercicio1 {
 		}
 		
 		if(stack.size()!= 0){
-			
-			JOptionPane.showMessageDialog(null, "Falta fechar parenteses na expressão!");
+			JOptionPane.showMessageDialog(null, "Falta fechar parenteses na expressão!", "Erro", JOptionPane.ERROR_MESSAGE);
 			
 		}else{
-			JOptionPane.showMessageDialog(null, "A expressão ta supimpa!");
+			
+			JOptionPane.showMessageDialog(null, "A expressão ta supimpa!", "YAAAY", JOptionPane.INFORMATION_MESSAGE);
 		}
 			
 	}

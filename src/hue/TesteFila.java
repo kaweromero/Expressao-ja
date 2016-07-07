@@ -11,20 +11,22 @@ public class TesteFila {
 		for (int i = 0; i < 10; i++) {
 			fila.inserirFila(i);
 		}
-		fila.imprimir();
+		//fila.imprimir();
+		//fila.removerFila();
 		//fila.removerFila();
 		//fila.imprimir();
 		//fila2 = fila;
 		//fila2.imprimir();
 		System.out.println("-------------");
-		//fila.imprimir();
-		//fila.esvaziar();
-		//fila.imprimir();
-		
-		
-		fila.moverFila(fila2);
 		fila.imprimir();
-		fila2.imprimir();
+		fila.esvaziar();
+		fila.imprimir();
+		
+		
+		//fila.moverFila(fila2);
+	
+		//fila.imprimir();
+		//fila2.imprimir();
 		
 	}
 

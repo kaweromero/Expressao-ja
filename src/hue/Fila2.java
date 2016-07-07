@@ -44,8 +44,10 @@ public class Fila2 {
 			while (aux.getProximo() != null) {
 				aux = aux.getProximo();
 			}
-			aux.setProximo(null);
-			quantidadeElemento--;
+			
+			//aux.setProximo(null);
+			aux=null;
+			//quantidadeElemento--;
 		}
 	}
 	
@@ -53,13 +55,16 @@ public class Fila2 {
 		if (quantidadeElemento == 0) {
 			System.out.println("Lista vazia!");
 		} else {
-			System.out.println("TInha algo na fila");
+			//System.out.println("TInha algo na fila");
 			No2 aux = inicio;
+		
 			while (aux.getProximo() != null) {
 				//fila.inserirFila(aux.getValor());
-				System.out.println("**"+aux.getValor());
+			    System.out.println("*"+aux.getValor());
 				aux = aux.getProximo();
+				
 			}
+			
 			fila.inserirFila(aux.getValor());
 			aux.setProximo(null);
 			quantidadeElemento--;
@@ -78,7 +83,7 @@ public class Fila2 {
 				aux2 = aux;
 				aux = aux.getProximo();
 				aux2 = null;
-				quantidadeElemento--;
+				//quantidadeElemento--;
 			}
 			//aux.setProximo(null);
 		}
