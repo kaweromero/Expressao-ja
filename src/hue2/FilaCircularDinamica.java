@@ -1,15 +1,22 @@
-package hue;
+package hue2;
 
 public class FilaCircularDinamica {
 
 	public NoFilaCircular inicio;
 	public NoFilaCircular fim;
+	public int size;
+
+	
 
 	public FilaCircularDinamica() {
 		this.inicio = null;
 		this.fim = null;
 	}
 
+	public int getSize() {
+		return size;
+	}
+	
 	public boolean vazia() {
 		return inicio == null && fim == null;
 	}
@@ -21,10 +28,12 @@ public class FilaCircularDinamica {
 			inicio = novo;
 			fim = novo;
 			fim.proximo = inicio;
+			size++;
 		} else {
 			novo.proximo = inicio;
 			fim.proximo = novo;
 			fim = novo;
+			size++;
 		}
 	}
 
