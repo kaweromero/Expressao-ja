@@ -32,5 +32,15 @@ public class Agenda {
 	private int calculaHash(Contato contato) {
 		return contato.nome.toLowerCase().charAt(0) % 26;
 	}
+	
+	public List<Contato> pegaTodas() {
+		  List<Contato> contatos = new ArrayList<Contato>();
+
+		  for (int i = 0; i < this.agenda.size(); i++) {
+		    contatos.addAll(this.agenda.get(i));
+		  }
+
+		  return contatos;
+		}
 
 }
