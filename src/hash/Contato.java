@@ -1,4 +1,4 @@
-package hash;
+package Hash;
 
 public class Contato {
 
